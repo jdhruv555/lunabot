@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>lunabot_localization</name>
+  <version>0.1.0</version>
+  <description>Global localization with AMCL and map_server.</description>
+  <maintainer email="you@example.com">LunaBot</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>nav2_map_server</exec_depend>
+  <exec_depend>nav2_amcl</exec_depend>
+  <exec_depend>nav2_lifecycle_manager</exec_depend>
+</package>

@@ -103,4 +103,27 @@
     <origin xyz="0 0 ${base_height/2}"/>
   </joint>
 
+  <!-- Gazebo diff-drive plugin to drive via /cmd_vel and publish /odom -->
+  <gazebo>
+    <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+      <ros>
+        <namespace>/</namespace>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>odom:=odom</remapping>
+      </ros>
+      <update_rate>50</update_rate>
+      <left_joint>wheel_fl_joint</left_joint>
+      <left_joint>wheel_rl_joint</left_joint>
+      <right_joint>wheel_fr_joint</right_joint>
+      <right_joint>wheel_rr_joint</right_joint>
+      <wheel_separation>${2*base_radius - 0.1}</wheel_separation>
+      <wheel_diameter>${2*wheel_radius}</wheel_diameter>
+      <publish_tf>true</publish_tf>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
+      <cmd_vel_topic>cmd_vel</cmd_vel_topic>
+      <odom_topic>odom</odom_topic>
+    </plugin>
+  </gazebo>
+
 </robot>
