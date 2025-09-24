@@ -1,0 +1,4 @@
+filters:
+  lidar:
+    range_min: 0.12
+    range_max: 12.0
