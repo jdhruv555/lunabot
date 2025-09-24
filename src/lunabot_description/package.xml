@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>lunabot_description</name>
+  <version>0.1.0</version>
+  <description>LunaBot robot description (URDF/Xacro, meshes).</description>
+  <maintainer email="you@example.com">LunaBot</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>robot_state_publisher</depend>
+  <depend>xacro</depend>
+  <depend>urdf</depend>
+  <exec_depend>rviz2</exec_depend>
+</package>
