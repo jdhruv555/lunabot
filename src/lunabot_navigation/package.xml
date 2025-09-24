@@ -5,7 +5,7 @@
   <description>Nav2 configuration for LunaBot.</description>
   <maintainer email="you@example.com">LunaBot</maintainer>
   <license>Apache-2.0</license>
-  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
   <exec_depend>nav2_bringup</exec_depend>
   <exec_depend>nav2_bt_navigator</exec_depend>
   <exec_depend>nav2_planner</exec_depend>
